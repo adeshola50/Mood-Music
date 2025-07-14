@@ -88,7 +88,7 @@ export default function Home() {
                 {[
                   {
                     name: "Facebook",
-                    url: `https://www.facebook.com/sharer/sharer.php?u=https://your-mood-music-app-link.com&quote=${encodeURIComponent(
+                    url: `https://www.facebook.com/sharer/sharer.php?u=https://ade-moodmusic.netlify.app&quote=${encodeURIComponent(
                       `🎧 Mood: ${selectedMood}\n"${quote}"\nNow playing: ${song.title}`
                     )}`,
                     icon: "📘",
@@ -96,26 +96,26 @@ export default function Home() {
                   {
                     name: "WhatsApp",
                     url: `https://wa.me/?text=${encodeURIComponent(
-                      ` 🎧 Mood: ${selectedMood}\n"${quote}"\nNow playing: ${song.title}\nTry it on: https://your-mood-music-app-link.com`
+                      ` 🎧 Mood: ${selectedMood}\n"${quote}"\nNow playing: ${song.title}\nTry it on: https://ade-moodmusic.netlify.app&quote`
                     )}`,
                     icon: "🟢",
                   },
                   {
                     name: "Telegram",
-                    url: `https://t.me/share/url?url=https://your-mood-music-app-link.com&text=${encodeURIComponent(
+                    url: `https://t.me/share/url?url=https://ade-moodmusic.netlify.app&quote=${encodeURIComponent(
                       ` Mood: ${selectedMood}\n"${quote}"\nNow playing: ${song.title}`
                     )}`,
                     icon: "📨",
                   },
                   {
                     name: "LinkedIn",
-                    url: ` https://www.linkedin.com/sharing/share-offsite/?url=https://your-mood-music-app-link.com`,
+                    url: ` https://www.linkedin.com/sharing/share-offsite/?url=https://ade-moodmusic.netlify.app&quote`,
                     icon: "💼"
                   },
                   {
                     name: "X",
                     url: `https://twitter.com/intent/tweet?text=${encodeURIComponent(
-                      ` 🎧 Mood: ${selectedMood}\n"${quote}"\nNow playing: ${song.title}\nTry it 👉 https://your-mood-music-app-link.com`
+                      ` 🎧 Mood: ${selectedMood}\n"${quote}"\nNow playing: ${song.title}\nTry it 👉 https://ade-moodmusic.netlify.app&quote`
                     )}`,
                     icon: "🐦",
                   },

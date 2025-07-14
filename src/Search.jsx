@@ -43,7 +43,7 @@ export default function Search() {
     {
       name: "Facebook",
       icon: <FaFacebookF />,
-      url: `https://www.facebook.com/sharer/sharer.php?u=https://your-mood-music-app-link.com&quote=${encodeURIComponent(
+      url: `https://www.facebook.com/sharer/sharer.php?u=https://ade-moodmusic.netlify.app&quote=${encodeURIComponent(
         shareText
       )}`,
     },
@@ -55,24 +55,24 @@ export default function Search() {
     {
       name: "WhatsApp",
       icon: <FaWhatsapp />,
-      url: `https://wa.me/?text=${encodeURIComponent(shareText)}`,
+      url: `https://wa.me/ade-moodmusic.netlify.app&quote=${encodeURIComponent(shareText)}`,
     },
     {
       name: "Telegram",
       icon: <FaTelegramPlane />,
-      url: `https://t.me/share/url?url=https://your-mood-music-app-link.com&text=${encodeURIComponent(
+      url: `https://t.me/share/url?url=https://ade-moodmusic.netlify.app&quote=${encodeURIComponent(
         shareText
       )}`,
     },
     {
       name: "LinkedIn",
       icon: <FaLinkedinIn />,
-      url: `https://www.linkedin.com/sharing/share-offsite/?url=https://your-mood-music-app-link.com`,
+      url: `https://www.linkedin.com/sharing/share-offsite/?url=https://ade-moodmusic.netlify.app&quote`,
     },
     {
       name: "Twitter",
       icon: <FaTwitter />,
-      url: `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}`,
+      url: `https://twitter.com/intent/ade-moodmusic.netlify.app&quote=${encodeURIComponent(shareText)}`,
     },
   ];
 
