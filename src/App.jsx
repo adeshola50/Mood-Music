@@ -1,23 +1,27 @@
-import { Routes, Route, Link } from "react-router-dom";
-import Home from "./Home";
-import Search from "./Search";
-import Footer from './Footer';
+import { Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import ReactGA from "react-ga4";
 
+import Layout from "./components/Layout";
+import Home from "./pages/Home";
+import Search from "./pages/Search";
 
-export default function App() {
+function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: location.pathname });
+  }, [location]);
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-100 to-purple-200">
-      <nav className="flex justify-between p-4 bg-white shadow-md">
-        <Link to="/" className="text-purple-700 font-bold text-xl">Mood-Music 🎧</Link>
-        <Link to="/search" className="text-purple-500 hover:underline">Search Mood</Link>
-      </nav>
-
+    <Layout>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/search" element={<Search />} />
       </Routes>
-      <Footer />
-    </div>
-
+    </Layout>
   );
 }
+
+export default App;
